@@ -125,6 +125,33 @@
             font-size: 20px; /* Slightly smaller text */
             color: #166d25;
         }
+
+        .voice-assistant-btn {
+            position: fixed;
+            top: 150px;
+            right: 20px;
+            background-color: #166d25;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .voice-assistant-btn:hover {
+            background-color: #0f4c1a;
+        }
+
+        .voice-assistant-btn img {
+            width: 30px;
+            height: 30px;
+        }
+        
         footer {
     background-color: #166d25; /* Dark Green */
     color: #ffffff;
@@ -150,6 +177,11 @@
            </ul>
         </div>
     </nav>
+
+     <button id="voice-assistant" class="voice-assistant-btn">
+        <i class="fas fa-bell" style="color: #f4f4f4;"></i>
+    </button>
+
 
     <!-- Main Content -->
     <div class="content">
@@ -190,10 +222,6 @@
             <a href="https://www.startus-insights.com/innovators-guide/agriculture-trends-innovation/" class="nav-item">
                 <i class="fas fa-chart-line"></i>
                 <span>Market Trends</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-                <span>Chat</span>
             </a>
             <a href="https://pmfby.gov.in/" class="nav-item">
                 <!-- Government Insurance Icon -->
